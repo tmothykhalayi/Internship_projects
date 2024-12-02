@@ -20,4 +20,19 @@ A web application that converts temperatures between Celsius, Fahrenheit, and Ke
 
 These projects are designed to demonstrate various web development and programming skills, ranging from front-end development (HTML, CSS, JavaScript) to back-end authentication (Flask/Django, Python). Each project can be accessed by cloning the repository and opening the relevant HTML files or running the Python-based applications locally.
 
+**password generator**
+This Python program generates random passwords based on user-defined criteria, including length and character types such as uppercase letters, lowercase letters, digits, and special characters. The user specifies the desired password length and selects which character sets to include. The program ensures that at least one character from each selected set is included in the password, then shuffles the characters for added randomness. The generated password is displayed, and the program continues to prompt for new passwords until the user chooses to stop. The password length must be at least 6 characters for security, and the user must select at least one character type.
+
+**Rock, paper, scissors game**
+This Python program lets you play the classic Rock, Paper, Scissors game against the computer. You input your choice, and the computer randomly selects rock, paper, or scissors. The program compares the choices and announces whether you win, lose, or tie based on the game's rules. The game continues until you choose to quit by typing "quit". It's a simple, fun way to play the game interactively through the terminal.
+**Number Guessing game**
+This Python program is a number guessing game where the user must guess a number between 1 and 10,000. The program generates a random number, and the user is prompted to input guesses. After each guess, the program provides hints, telling the user if their guess is too high or too low. The game continues until the user guesses the correct number, and the program displays the number of attempts taken. The program ensures the user inputs valid numbers and gives feedback to help them guess the correct number.
+
+
+
+
+
+
+
+
 
