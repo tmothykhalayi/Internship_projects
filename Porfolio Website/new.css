@@ -1,0 +1,531 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #f8f8f8;
+  color: #333;
+  padding: 0;
+  margin: 0;
+}
+
+/* Header Section */
+header {
+  background-color: #2c3e50;
+  color: white;
+  text-align: center;
+  padding: 50px 0;
+}
+
+header img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 5px solid #fff;
+  margin-bottom: 20px;
+}
+
+header h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+header p {
+  font-size: 1.5rem;
+  color: #bdc3c7;
+}
+
+/* Navigation Bar */
+nav {
+  background-color: #34495e;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  padding: 15px 0;
+  margin: 0;
+}
+
+nav ul li {
+  margin: 0 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  font-size: 1.2rem;
+  color: #ecf0f1;
+  padding: 10px 20px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+  background-color: #e74c3c;
+  color: white;
+}
+
+/* Main Section Layout */
+section {
+  padding: 50px 15%;
+  margin-top: 40px;
+}
+
+/* About Section */
+/* About Me Section */
+#about {
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 40px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+#about h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  text-align: center;
+  font-weight: 600;
+  color: #34495e;
+}
+
+.about-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+}
+
+.about-image {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 5px solid #ecf0f1;
+}
+
+.about-text {
+  max-width: 600px;
+}
+
+.about-text p {
+  font-size: 1.2rem;
+  line-height: 1.8;
+  color: #7f8c8d;
+  margin-bottom: 15px;
+}
+
+.about-text strong {
+  color: #e74c3c;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+  #about {
+    padding: 30px 20px;
+  }
+
+  .about-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .about-text {
+    text-align: center;
+  }
+}
+
+
+/* Skills Section */
+#skills {
+  background-color: #ecf0f1;
+  border-radius: 8px;
+  padding: 30px;
+}
+
+#skills h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+#skills ul {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+#skills ul li {
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  font-size: 1.2rem;
+}
+
+#skills ul li:hover {
+  background-color: #e74c3c;
+  color: white;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Projects Section */
+#projects {
+  background-color: #fff;
+  padding: 50px 15%;
+  margin-top: 40px;
+}
+
+#projects h2 {
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+  text-align: center;
+  color: #34495e;
+}
+
+.projects-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+.project {
+  background-color: #ecf0f1;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.project-details {
+  padding: 20px;
+}
+
+.project-details h3 {
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+  color: #2c3e50;
+}
+
+.project-details p {
+  font-size: 1.2rem;
+  color: #7f8c8d;
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+.project-link {
+  text-decoration: none;
+  color: #3498db;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.project-link:hover {
+  color: #2980b9;
+}
+
+/* Responsive Design for Projects */
+@media (max-width: 768px) {
+  #projects {
+    padding: 40px 10%;
+  }
+
+  .projects-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  #projects {
+    padding: 30px 5%;
+  }
+
+  .projects-container {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+/* Resume Section */
+#resume {
+  background-color: #f4f4f4;
+  padding: 50px 15%;
+  margin-top: 40px;
+}
+
+#resume h2 {
+  font-size: 2.5rem;
+  text-align: center;
+  color: #34495e;
+  margin-bottom: 30px;
+}
+
+.resume-container {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.resume-item {
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.resume-item h3 {
+  font-size: 1.8rem;
+  margin-bottom: 15px;
+  color: #2c3e50;
+}
+
+.resume-item p {
+  font-size: 1.2rem;
+  color: #7f8c8d;
+  margin-bottom: 15px;
+}
+
+.resume-item ul {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+.resume-item ul li {
+  font-size: 1.1rem;
+  color: #7f8c8d;
+}
+
+.work-experience h4 {
+  font-size: 1.5rem;
+  color: #2c3e50;
+  margin-bottom: 5px;
+}
+
+.work-experience p {
+  font-size: 1.1rem;
+  color: #7f8c8d;
+  margin-bottom: 10px;
+}
+
+.resume-download {
+  text-decoration: none;
+  color: #3498db;
+  font-weight: bold;
+  padding: 10px 20px;
+  background-color: #ecf0f1;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.resume-download:hover {
+  background-color: #bdc3c7;
+}
+
+/* Responsive Design for Resume */
+@media (max-width: 768px) {
+  #resume {
+    padding: 40px 10%;
+  }
+}
+
+@media (max-width: 480px) {
+  #resume {
+    padding: 30px 5%;
+  }
+}
+
+
+/* Contact Section */
+#contact {
+  background-color: #f4f4f4;
+  padding: 50px 15%;
+  margin-top: 40px;
+}
+
+#contact h2 {
+  font-size: 2.5rem;
+  text-align: center;
+  color: #34495e;
+  margin-bottom: 30px;
+}
+
+.contact-container {
+  display: flex;
+  flex-direction: row;
+  gap: 50px;
+  justify-content: space-between;
+}
+
+.contact-details {
+  flex: 1;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+
+.contact-details h3 {
+  font-size: 1.8rem;
+  margin-bottom: 15px;
+  color: #2c3e50;
+}
+
+.contact-details p {
+  font-size: 1.2rem;
+  color: #7f8c8d;
+  margin-bottom: 15px;
+}
+
+.contact-details a {
+  color: #3498db;
+  text-decoration: none;
+}
+
+.contact-details a:hover {
+  text-decoration: underline;
+}
+
+.contact-form {
+  flex: 1;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+
+.contact-form h3 {
+  font-size: 1.8rem;
+  margin-bottom: 15px;
+  color: #2c3e50;
+}
+
+.contact-form label {
+  font-size: 1.1rem;
+  color: #2c3e50;
+  margin-bottom: 10px;
+  display: block;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1.1rem;
+}
+
+.contact-form textarea {
+  resize: vertical;
+  min-height: 150px;
+}
+
+.submit-btn {
+  background-color: #3498db;
+  color: white;
+  padding: 15px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.submit-btn:hover {
+  background-color: #2980b9;
+}
+
+/* Responsive Design for Contact Section */
+@media (max-width: 768px) {
+  #contact {
+    padding: 40px 10%;
+  }
+
+  .contact-container {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 480px) {
+  #contact {
+    padding: 30px 5%;
+  }
+
+  .contact-container {
+    flex-direction: column;
+  }
+}
+
+
+/* Footer Section */
+/* Footer Styling */
+footer {
+  background-color: #34495e;
+  color: white;
+  padding: 20px 15%;
+  text-align: center;
+}
+
+footer .footer-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+footer p {
+  font-size: 1rem;
+  margin-bottom: 10px;
+}
+
+footer .social-links {
+  display: flex;
+  gap: 15px;
+}
+
+footer .social-links a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.2rem;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+footer .social-links a:hover {
+  color: #3498db;
+}
+
+/* Responsive Design for Footer */
+@media (max-width: 768px) {
+  footer {
+    padding: 20px 10%;
+  }
+
+  footer .footer-content {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 480px) {
+  footer {
+    padding: 20px 5%;
+  }
+
+  footer p {
+    font-size: 0.9rem;
+  }
+}
