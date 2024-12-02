@@ -7,7 +7,7 @@
 
 body {
   font-family: 'Roboto', sans-serif;
-  background-color: #f8f8f8;
+  background-color: greenyellow;
   color: #333;
   padding: 0;
   margin: 0;
@@ -16,7 +16,7 @@ body {
 /* Header Section */
 header {
   background-color: #2c3e50;
-  color: white;
+  color: grey;
   text-align: center;
   padding: 50px 0;
 }
